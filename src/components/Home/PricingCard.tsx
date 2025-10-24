@@ -41,11 +41,8 @@ const PricingCard = ({
     }
 
     if (priceName === "Huncho Free") {
-      router.push("/editor");
-    } else {
-      // Handle upgrade logic
-      toast.success(`Starting your ${priceName} trial!`);
-    }
+      router.push("/dashboard");
+    } 
   };
 
   return (
@@ -139,7 +136,7 @@ const PricingCard = ({
         onClick={handleAction}
         disabled={isPending || user.isLoading || (isPro && priceName !== "Huncho Teams")}
         className={cn(
-          "w-full font-semibold transition-all duration-200 mt-auto",
+          "w-full font-semibold transition-all duration-200 mt-auto cursor-pointer",
           featured
             ? "bg-gradient-to-r from-[#381c73] to-[#2574B7] hover:from-[#381c73]/90 hover:to-[#2574B7]/90 text-white shadow-lg"
             : "bg-primary text-primary-foreground hover:bg-primary/90"

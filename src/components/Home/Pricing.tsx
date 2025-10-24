@@ -42,39 +42,61 @@ const Pricing = () => {
                 "Watermark on exports"
               ]}
             />
-            <PricingCard
-              users="For One Person"
-              priceName="Huncho Pro"
-              description="For growing your brand or passion project with premium features"
-              price="$9.99"
-              features={[
-                "All Free features included",
-                "Premium templates & assets",
-                "HD & 4K exports",
-                "10GB cloud storage",
-                "Priority email support",
-                "Advanced design tools",
-                "No watermarks",
-                "Custom branding"
-              ]}
-              featured={true}
-            />
-            <PricingCard
-              users="For your team"
-              priceName="Huncho Teams"
-              description="For teams to create together with premium workplace tools and workflows"
-              price="$24.99"
-              features={[
-                "All Pro features included",
-                "Team workspaces & folders",
-                "100GB shared storage",
-                "Real-time collaboration",
-                "Admin & permission controls",
-                "Dedicated account manager",
-                "Advanced analytics",
-                "SSO & security features"
-              ]}
-            />
+            
+            {/* Huncho Pro - Disabled */}
+            <div className="relative">
+              <div className="absolute -top-3 -right-2 z-20">
+                <span className="bg-gradient-to-r from-purple-500 to-blue-500 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
+                  Coming Soon
+                </span>
+              </div>
+              <div className="relative opacity-60 grayscale">
+                <PricingCard
+                  users="For One Person"
+                  priceName="Huncho Pro"
+                  description="For growing your brand or passion project with premium features"
+                  price="$9.99"
+                  features={[
+                    "All Free features included",
+                    "Premium templates & assets",
+                    "HD & 4K exports",
+                    "10GB cloud storage",
+                    "Priority email support",
+                    "Advanced design tools",
+                    "No watermarks",
+                    "Custom branding"
+                  ]}
+                  featured={true}
+                />
+              </div>
+            </div>
+
+            {/* Huncho Teams - Disabled */}
+            <div className="relative">
+              <div className="absolute -top-3 -right-2 z-20">
+                <span className="bg-gradient-to-r from-blue-500 to-purple-500 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg">
+                  Coming Soon
+                </span>
+              </div>
+              <div className="relative opacity-60 grayscale">
+                <PricingCard
+                  users="For your team"
+                  priceName="Huncho Teams"
+                  description="For teams to create together with premium workplace tools and workflows"
+                  price="$24.99"
+                  features={[
+                    "All Pro features included",
+                    "Team workspaces & folders",
+                    "100GB shared storage",
+                    "Real-time collaboration",
+                    "Admin & permission controls",
+                    "Dedicated account manager",
+                    "Advanced analytics",
+                    "SSO & security features"
+                  ]}
+                />
+              </div>
+            </div>
           </div>
 
           {/* Additional Info */}
@@ -85,6 +107,11 @@ const Pricing = () => {
                 🔒 Your data is always secure and encrypted.
               </span>
             </p>
+            <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
+              <p className="text-blue-800 dark:text-blue-300 font-medium">
+                🎉 Enjoy our <span className="font-bold">Huncho Free</span> plan while we prepare our premium offerings!
+              </p>
+            </div>
           </div>
         </div>
       </div>
