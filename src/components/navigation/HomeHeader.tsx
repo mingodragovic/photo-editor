@@ -42,12 +42,14 @@ const HomeHeader = () => {
           >
             Sign in
           </Button>
-          <Button
-            className="bg-white text-gradient-to-r from-[#381c73] to-[#2574B7] hover:bg-white/90 shadow-lg cursor-pointer"
-            onClick={() => setIsLogin(true)}
-          >
-            Sign up
-          </Button>
+    <Button
+  className="bg-gradient-to-r from-[#381c73] to-[#2574B7] text-white font-semibold px-5 py-2 rounded-md shadow-md hover:opacity-90 transition-all duration-200 cursor-pointer"
+  onClick={() => setIsLogin(true)}
+>
+  Sign up
+</Button>
+
+
         </Unauthenticated>
         
         <Authenticated>
